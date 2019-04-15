@@ -1,0 +1,86 @@
+\hypertarget{classPoints}{}\doxysection{Points Class Reference}
+\label{classPoints}\index{Points@{Points}}
+
+
+Class to store in points in a vector and to calculate the value of error,slope and intercept.  
+
+
+
+
+{\ttfamily \#include $<$Points.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoints_a873f73eab85b743990a288980d1cd939}{take\+Input}} (string str1)
+\begin{DoxyCompactList}\small\item\em Preprocessing of points given as file input to store the points in a vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoints_a44d5fd0b523f81e3fef12b6a76c92351}{sort\+Byx}} ()
+\begin{DoxyCompactList}\small\item\em To sort the points by x-\/coordinate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoints_a69fa58e940e19e46b4dfc7627e30f600}{calc\+\_\+error}} ()
+\begin{DoxyCompactList}\small\item\em To store slope,error,intercept of best fit line between set of points \{pi,pi+1,............,pj\} in a vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoints_a37ba7062213c6ab320abf56306a91bae}\label{classPoints_a37ba7062213c6ab320abf56306a91bae}} 
+int \mbox{\hyperlink{classPoints_a37ba7062213c6ab320abf56306a91bae}{num\+Pt}}
+\begin{DoxyCompactList}\small\item\em To store number of points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_ade6b77e424e78586e50943defb77eabb}\label{classPoints_ade6b77e424e78586e50943defb77eabb}} 
+vector$<$ pair$<$ double, double $>$ $>$ \mbox{\hyperlink{classPoints_ade6b77e424e78586e50943defb77eabb}{points}}
+\begin{DoxyCompactList}\small\item\em A vector which holds the entire graph\textquotesingle{}s coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_a2cfa5d6967a1afb8976127907d1bf00e}\label{classPoints_a2cfa5d6967a1afb8976127907d1bf00e}} 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classPoints_a2cfa5d6967a1afb8976127907d1bf00e}{err}}
+\begin{DoxyCompactList}\small\item\em Vector to store error of best fit line between two points i and j. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_aa0da9f115b32036c3e212ca58de79bda}\label{classPoints_aa0da9f115b32036c3e212ca58de79bda}} 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classPoints_aa0da9f115b32036c3e212ca58de79bda}{slope}}
+\begin{DoxyCompactList}\small\item\em Vector to store slope of best fit line between two points i and j. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_ab04bc42a9b284542945d6071ee2ea589}\label{classPoints_ab04bc42a9b284542945d6071ee2ea589}} 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classPoints_ab04bc42a9b284542945d6071ee2ea589}{intercept}}
+\begin{DoxyCompactList}\small\item\em Vector to store intercept of best fit line between two points i and j. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to store in points in a vector and to calculate the value of error,slope and intercept. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoints_a69fa58e940e19e46b4dfc7627e30f600}\label{classPoints_a69fa58e940e19e46b4dfc7627e30f600}} 
+\index{Points@{Points}!calc\_error@{calc\_error}}
+\index{calc\_error@{calc\_error}!Points@{Points}}
+\doxysubsubsection{\texorpdfstring{calc\_error()}{calc\_error()}}
+{\footnotesize\ttfamily void Points\+::calc\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+To store slope,error,intercept of best fit line between set of points \{pi,pi+1,............,pj\} in a vector. 
+
+\mbox{\Hypertarget{classPoints_a44d5fd0b523f81e3fef12b6a76c92351}\label{classPoints_a44d5fd0b523f81e3fef12b6a76c92351}} 
+\index{Points@{Points}!sortByx@{sortByx}}
+\index{sortByx@{sortByx}!Points@{Points}}
+\doxysubsubsection{\texorpdfstring{sortByx()}{sortByx()}}
+{\footnotesize\ttfamily void Points\+::sort\+Byx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+To sort the points by x-\/coordinate. 
+
+\mbox{\Hypertarget{classPoints_a873f73eab85b743990a288980d1cd939}\label{classPoints_a873f73eab85b743990a288980d1cd939}} 
+\index{Points@{Points}!takeInput@{takeInput}}
+\index{takeInput@{takeInput}!Points@{Points}}
+\doxysubsubsection{\texorpdfstring{takeInput()}{takeInput()}}
+{\footnotesize\ttfamily void Points\+::take\+Input (\begin{DoxyParamCaption}\item[{string}]{str1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Preprocessing of points given as file input to store the points in a vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str1} & File\+\_\+\+Name which contains input points \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Points.\+h\end{DoxyCompactItemize}

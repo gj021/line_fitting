@@ -1,0 +1,159 @@
+\hypertarget{classOperation}{}\doxysection{Operation Class Reference}
+\label{classOperation}\index{Operation@{Operation}}
+
+
+Class which contains functions to calculate such as sigma(\+X),sigma(\+Y),sigma(\+X\+Y),slope and intercept of best fit line.  
+
+
+
+
+{\ttfamily \#include $<$Points.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{classOperation_a56117ecd272bb09921d86c563b897f6c}{split}} (string str, char delimiter)
+\begin{DoxyCompactList}\small\item\em Function to tokenize each line of file to get the value of points. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOperation_a6e0c2cbfb49750ce4c26d5a3eda1be8c}{mul\+\_\+pairs}} (vector$<$ pair$<$ double, double $>$ $>$points, int start, int end)
+\begin{DoxyCompactList}\small\item\em To calculate the sum of multiplication of x-\/coordinate and y-\/coordinate of points. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOperation_a29a19cf5c54cc87ae693ba73d9f74749}{sumX}} (vector$<$ pair$<$ double, double $>$ $>$points, int start, int end)
+\begin{DoxyCompactList}\small\item\em To calculate the sum of x-\/coordinate of points. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOperation_a5506d42a4fa0c140bfa7038b9d1476b4}{sumY}} (vector$<$ pair$<$ double, double $>$ $>$points, int start, int end)
+\begin{DoxyCompactList}\small\item\em To calculate the sum of y-\/coordinate of points. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOperation_a11838897907562c18a5ef2e624a4febd}{sum\+X2}} (vector$<$ pair$<$ double, double $>$ $>$points, int start, int end)
+\begin{DoxyCompactList}\small\item\em To calculate the sum of squares of x-\/coordinate of points. \end{DoxyCompactList}\item 
+pair$<$ double, double $>$ \mbox{\hyperlink{classOperation_a10d2612427bda026f8d21ab0782fd078}{calc\+\_\+slope\+\_\+intercept}} (vector$<$ pair$<$ double, double $>$ $>$points, int start, int end)
+\begin{DoxyCompactList}\small\item\em To calculate the slope and intercept of the best fit lines between set of points \{pi,pi+1,............,pj\}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class which contains functions to calculate such as sigma(\+X),sigma(\+Y),sigma(\+X\+Y),slope and intercept of best fit line. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOperation_a10d2612427bda026f8d21ab0782fd078}\label{classOperation_a10d2612427bda026f8d21ab0782fd078}} 
+\index{Operation@{Operation}!calc\_slope\_intercept@{calc\_slope\_intercept}}
+\index{calc\_slope\_intercept@{calc\_slope\_intercept}!Operation@{Operation}}
+\doxysubsubsection{\texorpdfstring{calc\_slope\_intercept()}{calc\_slope\_intercept()}}
+{\footnotesize\ttfamily pair$<$double,double$>$ Operation\+::calc\+\_\+slope\+\_\+intercept (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$ $>$}]{points,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+To calculate the slope and intercept of the best fit lines between set of points \{pi,pi+1,............,pj\}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Starting index of points for which best line needs to be calculated \\
+\hline
+{\em end} & Ending index of points for which best line needs to be calculated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pair$<$double,double$>$ Slope and Intercept of the best fit line 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOperation_a6e0c2cbfb49750ce4c26d5a3eda1be8c}\label{classOperation_a6e0c2cbfb49750ce4c26d5a3eda1be8c}} 
+\index{Operation@{Operation}!mul\_pairs@{mul\_pairs}}
+\index{mul\_pairs@{mul\_pairs}!Operation@{Operation}}
+\doxysubsubsection{\texorpdfstring{mul\_pairs()}{mul\_pairs()}}
+{\footnotesize\ttfamily double Operation\+::mul\+\_\+pairs (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$ $>$}]{points,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+To calculate the sum of multiplication of x-\/coordinate and y-\/coordinate of points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Starting index of points for which best line needs to be calculated \\
+\hline
+{\em end} & Ending index of points for which best line needs to be calculated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Sigma(x$\ast$y) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOperation_a56117ecd272bb09921d86c563b897f6c}\label{classOperation_a56117ecd272bb09921d86c563b897f6c}} 
+\index{Operation@{Operation}!split@{split}}
+\index{split@{split}!Operation@{Operation}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily vector$<$string$>$ Operation\+::split (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{char}]{delimiter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to tokenize each line of file to get the value of points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Line of the input file \\
+\hline
+{\em delimiter} & Delimter to break the string into tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$string$>$ Vector of strings which contains points value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOperation_a29a19cf5c54cc87ae693ba73d9f74749}\label{classOperation_a29a19cf5c54cc87ae693ba73d9f74749}} 
+\index{Operation@{Operation}!sumX@{sumX}}
+\index{sumX@{sumX}!Operation@{Operation}}
+\doxysubsubsection{\texorpdfstring{sumX()}{sumX()}}
+{\footnotesize\ttfamily double Operation\+::sumX (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$ $>$}]{points,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+To calculate the sum of x-\/coordinate of points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Starting index of points for which best line needs to be calculated \\
+\hline
+{\em end} & Ending index of points for which best line needs to be calculated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Sigma(x) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOperation_a11838897907562c18a5ef2e624a4febd}\label{classOperation_a11838897907562c18a5ef2e624a4febd}} 
+\index{Operation@{Operation}!sumX2@{sumX2}}
+\index{sumX2@{sumX2}!Operation@{Operation}}
+\doxysubsubsection{\texorpdfstring{sumX2()}{sumX2()}}
+{\footnotesize\ttfamily double Operation\+::sum\+X2 (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$ $>$}]{points,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+To calculate the sum of squares of x-\/coordinate of points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Starting index of points for which best line needs to be calculated \\
+\hline
+{\em end} & Ending index of points for which best line needs to be calculated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Sigma(x$^\wedge$2) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOperation_a5506d42a4fa0c140bfa7038b9d1476b4}\label{classOperation_a5506d42a4fa0c140bfa7038b9d1476b4}} 
+\index{Operation@{Operation}!sumY@{sumY}}
+\index{sumY@{sumY}!Operation@{Operation}}
+\doxysubsubsection{\texorpdfstring{sumY()}{sumY()}}
+{\footnotesize\ttfamily double Operation\+::sumY (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$ $>$}]{points,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+To calculate the sum of y-\/coordinate of points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Starting index of points for which best line needs to be calculated \\
+\hline
+{\em end} & Ending index of points for which best line needs to be calculated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Sigma(y) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Points.\+h\end{DoxyCompactItemize}

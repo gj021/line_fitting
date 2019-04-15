@@ -1,0 +1,73 @@
+\hypertarget{classlineFitting}{}\doxysection{line\+Fitting Class Reference}
+\label{classlineFitting}\index{lineFitting@{lineFitting}}
+
+
+Class for calculating the optimal best lines for given input of points.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classlineFitting_abf7f9e7a9c6c4ebb87b0fdf515d277fe}{find\+\_\+optimum}} (double c, vector$<$ vector$<$ double $>$$>$ err)
+\begin{DoxyCompactList}\small\item\em function to find the optimum pair of lines using Dynamic Programming. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlineFitting_ad204f066039fb64f15fa33e57212eff9}{fit\+\_\+lines}} (vector$<$ vector$<$ double $>$$>$ slope, vector$<$ vector$<$ double $>$$>$ intercept)
+\begin{DoxyCompactList}\small\item\em function to calculate the best fit lines from the calculated errors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlineFitting_ad57655f319c3473e4fa52051d5b22175}\label{classlineFitting_ad57655f319c3473e4fa52051d5b22175}} 
+vector$<$ double $>$ {\bfseries M}
+\item 
+\mbox{\Hypertarget{classlineFitting_abcb9ad15b2621ebb421f617e29df43bc}\label{classlineFitting_abcb9ad15b2621ebb421f617e29df43bc}} 
+vector$<$ int $>$ {\bfseries iforj}
+\item 
+\mbox{\Hypertarget{classlineFitting_a20c09c4c0e807ff1692c288eeae52b87}\label{classlineFitting_a20c09c4c0e807ff1692c288eeae52b87}} 
+vector$<$ pair$<$ int, int $>$ $>$ {\bfseries fit\+\_\+points}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for calculating the optimal best lines for given input of points. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlineFitting_abf7f9e7a9c6c4ebb87b0fdf515d277fe}\label{classlineFitting_abf7f9e7a9c6c4ebb87b0fdf515d277fe}} 
+\index{lineFitting@{lineFitting}!find\_optimum@{find\_optimum}}
+\index{find\_optimum@{find\_optimum}!lineFitting@{lineFitting}}
+\doxysubsubsection{\texorpdfstring{find\_optimum()}{find\_optimum()}}
+{\footnotesize\ttfamily void line\+Fitting\+::find\+\_\+optimum (\begin{DoxyParamCaption}\item[{double}]{c,  }\item[{vector$<$ vector$<$ double $>$$>$}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+function to find the optimum pair of lines using Dynamic Programming. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & cost variable to keep in check the number of segments. \\
+\hline
+{\em err} & error vector to store errors for best fit lines. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlineFitting_ad204f066039fb64f15fa33e57212eff9}\label{classlineFitting_ad204f066039fb64f15fa33e57212eff9}} 
+\index{lineFitting@{lineFitting}!fit\_lines@{fit\_lines}}
+\index{fit\_lines@{fit\_lines}!lineFitting@{lineFitting}}
+\doxysubsubsection{\texorpdfstring{fit\_lines()}{fit\_lines()}}
+{\footnotesize\ttfamily void line\+Fitting\+::fit\+\_\+lines (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ double $>$$>$}]{slope,  }\item[{vector$<$ vector$<$ double $>$$>$}]{intercept }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+function to calculate the best fit lines from the calculated errors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slope} & vector to store slopes for all possible pairs of lines. \\
+\hline
+{\em intercept} & vector to store intercepts for all possible pairs of lines. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{line__fitting_8cpp}{line\+\_\+fitting.\+cpp}}\end{DoxyCompactItemize}
