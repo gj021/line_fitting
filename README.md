@@ -1,6 +1,6 @@
 # line_fitting
 This code is doxygen compilent
-Go to ./html/index.html in this directory to see doxygen support
+Go to ./html/index.html in this directory to see doxygen support.
 Requirements:
   g++ compiler
   python setup
